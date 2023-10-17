@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot renders homepage unchanged 1`] = `
+<div>
+  <section
+    class="bg-gradient-to-r from-cyan-500 to-blue-500 main"
+  >
+    <h1
+      class="title"
+    >
+      Welcome to Next.js!
+    </h1>
+    <h3
+      class="text-3xl font-bold underline"
+    />
+    <div
+      class="container"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card__header"
+        >
+          <img
+            alt="card__image"
+            class="card__image"
+            data-nimg="1"
+            decoding="async"
+            height="400"
+            loading="lazy"
+            src="/_next/image?url=%2Ftime-cat.jpg&w=1200&q=75"
+            srcset="/_next/image?url=%2Ftime-cat.jpg&w=640&q=75 1x, /_next/image?url=%2Ftime-cat.jpg&w=1200&q=75 2x"
+            style="color: transparent;"
+            width="600"
+          />
+        </div>
+        <div
+          class="card__body"
+        >
+          <span
+            class="tag tag-blue"
+          >
+            Felines
+          </span>
+          <h4>
+            What's new in Cats
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!
+          </p>
+        </div>
+        <div
+          class="card__footer"
+        >
+          <div
+            class="user"
+          >
+            <img
+              alt="user__image"
+              class="user__image"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fi.pravatar.cc%2F40%3Fimg%3D3&w=96&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fi.pravatar.cc%2F40%3Fimg%3D3&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fi.pravatar.cc%2F40%3Fimg%3D3&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <div
+              class="user__info"
+            >
+              <h5>
+                Alex
+              </h5>
+              <small>
+                2h ago
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button>
+      Counter Increment(
+      0
+      )
+    </button>
+  </section>
+</div>
+`;
