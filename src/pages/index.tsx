@@ -26,6 +26,7 @@ const Home: NextPageWithLayout = () => {
       ].join(' ')}
     >
       <h1 className={styles.title}>Welcome to Next.js!</h1>
+      <h2>Next JS template for Base template</h2>
       <h3 className="text-3xl font-bold underline">{process.env.siteName}</h3>
       <CatCard {...mockCatCardProps.base} />
       <button onClick={onWelcome}>Counter Increment({counter})</button>
