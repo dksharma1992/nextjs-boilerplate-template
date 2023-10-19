@@ -3,12 +3,11 @@ import CatCard from '../common/components/cards/cat/CatCard';
 import { mockCatCardProps } from '../common/components/cards/cat/CatCard.mocks';
 import styles from '../styles/Home.module.css';
 
-import { counterSlice } from '@/Redux/Modules/Counter';
 import PrimaryLayout from '@/common/components/layouts/primary/PrimaryLayout';
 import SidebarLayout from '@/common/components/layouts/sidebar/SidebarLayout';
+import { counterSlice } from '@/Redux/Modules/Counter';
 import { useDispatch, useSelector } from 'react-redux';
 import { NextPageWithLayout } from './page';
-
 const Home: NextPageWithLayout = () => {
   const counter = useSelector((state: any) => state.counter?.countNumber);
   const dispatch = useDispatch();
@@ -44,3 +43,12 @@ Home.getLayout = (page) => {
     </PrimaryLayout>
   );
 };
+export async function getStaticProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://reqres.in/api/users?page=1`); //initial call on the server side at build time
+  const data = await res.json();
+
+  // Pass data to the page via props
+  console.log(data);
+  return { props: { data }, revalidate: 500 };
+}

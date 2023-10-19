@@ -4,32 +4,39 @@ import { NextPageWithLayout } from './page';
 
 const About: NextPageWithLayout = () => {
   return (
-    <section>
-      <h2>Layout Example (About)</h2>
-      <p>
-        This example adds a property <code>getLayout</code> to your page,
-        allowing you to return a React component for the layout. This allows you
-        to define the layout on a per-page basis. Since we&apos;re returning a
-        function, we can have complex nested layouts if desired.
-      </p>
-      <p>
-        When navigating between pages, we want to persist page state (input
-        values, scroll position, etc.) for a Single-Page Application (SPA)
-        experience.
-      </p>
-      <p>
-        This layout pattern will allow for state persistence because the React
-        component tree is persisted between page transitions. To preserve state,
-        we need to prevent the React component tree from being discarded between
-        page transitions.
-      </p>
-      <h3>Try It Out</h3>
-      <p>
-        To visualize this, try tying in the search input in the{' '}
-        <code>Sidebar</code> and then changing routes. You&apos;ll notice the
-        input state is persisted.
-      </p>
-    </section>
+    <div className="container p-3 vh-100">
+      <button className="btn btn-primary m-3">Sling Academy</button>
+      <button className="btn btn-warning m-3">Hello</button>
+
+      <div className="dropdown m-3">
+        <button
+          className="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          id="dropdownMenuButton1"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a className="dropdown-item" href="#">
+              Option 1
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Option 2
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Option 3
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
